@@ -1,0 +1,1 @@
+Fiscal year ending Jun 30, 2020:  Profit margin was 30.96, operating margin 37.03%.\nRevenue was up at 143.02e9 dollars.  Revenue per share fell to 18 dollars.  Float %, \nreported in hex was 0x4fa20, while short % was 0x99cb1\nFractional share volume was -1.3e-4

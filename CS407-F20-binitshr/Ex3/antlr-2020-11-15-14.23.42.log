@@ -1,0 +1,34 @@
+2020-11-15 14:23:41:910 grammar LogManager.java:25 before: (COMBINED_GRAMMAR Http (RULES (RULE message (BLOCK (ALT start_line (* (BLOCK (ALT header_field CRLF))) CRLF))) (RULE start_line (BLOCK (ALT request_line) (ALT status_line))) (RULE request_line (BLOCK (ALT method SP request_target SP http_version CRLF))) (RULE status_line (BLOCK (ALT http_version SP status_code SP reason_phrase CRLF))) (RULE header_field (BLOCK (ALT field_name ':' (* (BLOCK (ALT SP))) field_value (* (BLOCK (ALT SP)))))) (RULE method (BLOCK (ALT 'GET') (ALT 'HEAD') (ALT 'POST') (ALT 'PUT') (ALT 'PATCH') (ALT 'DELETE') (ALT 'CONNECT') (ALT 'OPTIONS') (ALT 'TRACE'))) (RULE request_target (BLOCK (ALT TEXT))) (RULE http_version (BLOCK (ALT HTTP_VERSION))) (RULE status_code (BLOCK (ALT INT))) (RULE reason_phrase (BLOCK (ALT TOKEN))) (RULE field_name (BLOCK (ALT TOKEN))) (RULE field_value (BLOCK (ALT (+ (BLOCK (ALT (BLOCK (ALT TEXT) (ALT TOKEN) (ALT INT)) (? (BLOCK (ALT SP))) (? (BLOCK (ALT ':'))))))))) (RULE DIGIT (RULEMODIFIERS fragment) (BLOCK (ALT [0-9]))) (RULE INT (BLOCK (ALT (+ (BLOCK (ALT DIGIT)))))) (RULE HTTP_VERSION (BLOCK (ALT 'HTTP/2') (ALT 'HTTP/1.1') (ALT 'HTTP/1.0'))) (RULE TOKEN (BLOCK (ALT (+ (BLOCK (ALT [a-zA-Z0-9!#$%&'*+-.^_`|~])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [ \r\n:])))))))) (RULE SP (BLOCK (ALT ' '))) (RULE CRLF (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n')))))
+2020-11-15 14:23:41:928 grammar LogManager.java:25 after: (COMBINED_GRAMMAR Http (RULES (RULE message (BLOCK (ALT start_line (* (BLOCK (ALT header_field CRLF))) CRLF))) (RULE start_line (BLOCK (ALT request_line) (ALT status_line))) (RULE request_line (BLOCK (ALT method SP request_target SP http_version CRLF))) (RULE status_line (BLOCK (ALT http_version SP status_code SP reason_phrase CRLF))) (RULE header_field (BLOCK (ALT field_name ':' (* (BLOCK (ALT SP))) field_value (* (BLOCK (ALT SP)))))) (RULE method (BLOCK (ALT (SET 'GET' 'HEAD' 'POST' 'PUT' 'PATCH' 'DELETE' 'CONNECT' 'OPTIONS' 'TRACE')))) (RULE request_target (BLOCK (ALT TEXT))) (RULE http_version (BLOCK (ALT HTTP_VERSION))) (RULE status_code (BLOCK (ALT INT))) (RULE reason_phrase (BLOCK (ALT TOKEN))) (RULE field_name (BLOCK (ALT TOKEN))) (RULE field_value (BLOCK (ALT (+ (BLOCK (ALT (SET TEXT TOKEN INT) (? (BLOCK (ALT SP))) (? (BLOCK (ALT ':'))))))))) (RULE DIGIT (RULEMODIFIERS fragment) (BLOCK (ALT [0-9]))) (RULE INT (BLOCK (ALT (+ (BLOCK (ALT DIGIT)))))) (RULE HTTP_VERSION (BLOCK (ALT 'HTTP/2') (ALT 'HTTP/1.1') (ALT 'HTTP/1.0'))) (RULE TOKEN (BLOCK (ALT (+ (BLOCK (ALT [a-zA-Z0-9!#$%&'*+-.^_`|~])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [ \r\n:])))))))) (RULE SP (BLOCK (ALT ' '))) (RULE CRLF (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n')))))
+2020-11-15 14:23:41:946 grammar LogManager.java:25 after extract implicit lexer =(COMBINED_GRAMMAR Http (RULES (RULE message (BLOCK (ALT start_line (* (BLOCK (ALT header_field CRLF))) CRLF))) (RULE start_line (BLOCK (ALT request_line) (ALT status_line))) (RULE request_line (BLOCK (ALT method SP request_target SP http_version CRLF))) (RULE status_line (BLOCK (ALT http_version SP status_code SP reason_phrase CRLF))) (RULE header_field (BLOCK (ALT field_name ':' (* (BLOCK (ALT SP))) field_value (* (BLOCK (ALT SP)))))) (RULE method (BLOCK (ALT (SET 'GET' 'HEAD' 'POST' 'PUT' 'PATCH' 'DELETE' 'CONNECT' 'OPTIONS' 'TRACE')))) (RULE request_target (BLOCK (ALT TEXT))) (RULE http_version (BLOCK (ALT HTTP_VERSION))) (RULE status_code (BLOCK (ALT INT))) (RULE reason_phrase (BLOCK (ALT TOKEN))) (RULE field_name (BLOCK (ALT TOKEN))) (RULE field_value (BLOCK (ALT (+ (BLOCK (ALT (SET TEXT TOKEN INT) (? (BLOCK (ALT SP))) (? (BLOCK (ALT ':')))))))))))
+2020-11-15 14:23:41:947 grammar LogManager.java:25 lexer =(LEXER_GRAMMAR HttpLexer (RULES (RULE T__0 (BLOCK (ALT ':'))) (RULE T__1 (BLOCK (ALT 'GET'))) (RULE T__2 (BLOCK (ALT 'HEAD'))) (RULE T__3 (BLOCK (ALT 'POST'))) (RULE T__4 (BLOCK (ALT 'PUT'))) (RULE T__5 (BLOCK (ALT 'PATCH'))) (RULE T__6 (BLOCK (ALT 'DELETE'))) (RULE T__7 (BLOCK (ALT 'CONNECT'))) (RULE T__8 (BLOCK (ALT 'OPTIONS'))) (RULE T__9 (BLOCK (ALT 'TRACE'))) (RULE DIGIT (RULEMODIFIERS fragment) (BLOCK (ALT [0-9]))) (RULE INT (BLOCK (ALT (+ (BLOCK (ALT DIGIT)))))) (RULE HTTP_VERSION (BLOCK (ALT 'HTTP/2') (ALT 'HTTP/1.1') (ALT 'HTTP/1.0'))) (RULE TOKEN (BLOCK (ALT (+ (BLOCK (ALT [a-zA-Z0-9!#$%&'*+-.^_`|~])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [ \r\n:])))))))) (RULE SP (BLOCK (ALT ' '))) (RULE CRLF (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n')))))
+2020-11-15 14:23:42:122 semantics LogManager.java:25 tokens={EOF=-1, T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, T__9=10, INT=11, HTTP_VERSION=12, TOKEN=13, TEXT=14, SP=15, CRLF=16}
+2020-11-15 14:23:42:122 semantics LogManager.java:25 strings={':'=1, 'GET'=2, 'HEAD'=3, 'POST'=4, 'PUT'=5, 'PATCH'=6, 'DELETE'=7, 'CONNECT'=8, 'OPTIONS'=9, 'TRACE'=10, ' '=15}
+2020-11-15 14:23:42:125 LL1 LogManager.java:25 
+DECISION 0 in rule message
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[13, 16]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 1 in rule start_line
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[{2..10}, 12]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 2 in rule header_field
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[15, {11, 13..14}]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 3 in rule header_field
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[15, 16]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 4 in rule field_value
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[15, {1, 11, 13..16}]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? false
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 5 in rule field_value
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[1, {11, 13..16}]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 
+DECISION 6 in rule field_value
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 look=[{11, 13..14}, {15..16}]
+2020-11-15 14:23:42:126 LL1 LogManager.java:25 LL(1)? true

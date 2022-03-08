@@ -1,0 +1,151 @@
+// Generated from Http.g4 by ANTLR 4.7.2
+// jshint ignore: start
+var antlr4 = require('antlr4/index');
+
+
+
+var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
+    "\u0002\u0012\u008c\b\u0001\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004",
+    "\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t",
+    "\u0007\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004",
+    "\f\t\f\u0004\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010",
+    "\t\u0010\u0004\u0011\t\u0011\u0004\u0012\t\u0012\u0003\u0002\u0003\u0002",
+    "\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0003\u0004\u0003\u0004",
+    "\u0003\u0004\u0003\u0004\u0003\u0004\u0003\u0005\u0003\u0005\u0003\u0005",
+    "\u0003\u0005\u0003\u0005\u0003\u0006\u0003\u0006\u0003\u0006\u0003\u0006",
+    "\u0003\u0007\u0003\u0007\u0003\u0007\u0003\u0007\u0003\u0007\u0003\u0007",
+    "\u0003\b\u0003\b\u0003\b\u0003\b\u0003\b\u0003\b\u0003\b\u0003\t\u0003",
+    "\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\t\u0003\n\u0003\n\u0003",
+    "\n\u0003\n\u0003\n\u0003\n\u0003\n\u0003\n\u0003\u000b\u0003\u000b\u0003",
+    "\u000b\u0003\u000b\u0003\u000b\u0003\u000b\u0003\f\u0003\f\u0003\r\u0006",
+    "\r`\n\r\r\r\u000e\ra\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e",
+    "\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e",
+    "\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e",
+    "\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e\u0003\u000e",
+    "\u0005\u000ez\n\u000e\u0003\u000f\u0006\u000f}\n\u000f\r\u000f\u000e",
+    "\u000f~\u0003\u0010\u0006\u0010\u0082\n\u0010\r\u0010\u000e\u0010\u0083",
+    "\u0003\u0011\u0003\u0011\u0003\u0012\u0005\u0012\u0089\n\u0012\u0003",
+    "\u0012\u0003\u0012\u0002\u0002\u0013\u0003\u0003\u0005\u0004\u0007\u0005",
+    "\t\u0006\u000b\u0007\r\b\u000f\t\u0011\n\u0013\u000b\u0015\f\u0017\u0002",
+    "\u0019\r\u001b\u000e\u001d\u000f\u001f\u0010!\u0011#\u0012\u0003\u0002",
+    "\u0005\u0003\u00022;\n\u0002##%),02;C\\`|~~\u0080\u0080\u0006\u0002",
+    "\f\f\u000f\u000f\"\"<<\u0002\u0090\u0002\u0003\u0003\u0002\u0002\u0002",
+    "\u0002\u0005\u0003\u0002\u0002\u0002\u0002\u0007\u0003\u0002\u0002\u0002",
+    "\u0002\t\u0003\u0002\u0002\u0002\u0002\u000b\u0003\u0002\u0002\u0002",
+    "\u0002\r\u0003\u0002\u0002\u0002\u0002\u000f\u0003\u0002\u0002\u0002",
+    "\u0002\u0011\u0003\u0002\u0002\u0002\u0002\u0013\u0003\u0002\u0002\u0002",
+    "\u0002\u0015\u0003\u0002\u0002\u0002\u0002\u0019\u0003\u0002\u0002\u0002",
+    "\u0002\u001b\u0003\u0002\u0002\u0002\u0002\u001d\u0003\u0002\u0002\u0002",
+    "\u0002\u001f\u0003\u0002\u0002\u0002\u0002!\u0003\u0002\u0002\u0002",
+    "\u0002#\u0003\u0002\u0002\u0002\u0003%\u0003\u0002\u0002\u0002\u0005",
+    "\'\u0003\u0002\u0002\u0002\u0007+\u0003\u0002\u0002\u0002\t0\u0003\u0002",
+    "\u0002\u0002\u000b5\u0003\u0002\u0002\u0002\r9\u0003\u0002\u0002\u0002",
+    "\u000f?\u0003\u0002\u0002\u0002\u0011F\u0003\u0002\u0002\u0002\u0013",
+    "N\u0003\u0002\u0002\u0002\u0015V\u0003\u0002\u0002\u0002\u0017\\\u0003",
+    "\u0002\u0002\u0002\u0019_\u0003\u0002\u0002\u0002\u001by\u0003\u0002",
+    "\u0002\u0002\u001d|\u0003\u0002\u0002\u0002\u001f\u0081\u0003\u0002",
+    "\u0002\u0002!\u0085\u0003\u0002\u0002\u0002#\u0088\u0003\u0002\u0002",
+    "\u0002%&\u0007<\u0002\u0002&\u0004\u0003\u0002\u0002\u0002\'(\u0007",
+    "I\u0002\u0002()\u0007G\u0002\u0002)*\u0007V\u0002\u0002*\u0006\u0003",
+    "\u0002\u0002\u0002+,\u0007J\u0002\u0002,-\u0007G\u0002\u0002-.\u0007",
+    "C\u0002\u0002./\u0007F\u0002\u0002/\b\u0003\u0002\u0002\u000201\u0007",
+    "R\u0002\u000212\u0007Q\u0002\u000223\u0007U\u0002\u000234\u0007V\u0002",
+    "\u00024\n\u0003\u0002\u0002\u000256\u0007R\u0002\u000267\u0007W\u0002",
+    "\u000278\u0007V\u0002\u00028\f\u0003\u0002\u0002\u00029:\u0007R\u0002",
+    "\u0002:;\u0007C\u0002\u0002;<\u0007V\u0002\u0002<=\u0007E\u0002\u0002",
+    "=>\u0007J\u0002\u0002>\u000e\u0003\u0002\u0002\u0002?@\u0007F\u0002",
+    "\u0002@A\u0007G\u0002\u0002AB\u0007N\u0002\u0002BC\u0007G\u0002\u0002",
+    "CD\u0007V\u0002\u0002DE\u0007G\u0002\u0002E\u0010\u0003\u0002\u0002",
+    "\u0002FG\u0007E\u0002\u0002GH\u0007Q\u0002\u0002HI\u0007P\u0002\u0002",
+    "IJ\u0007P\u0002\u0002JK\u0007G\u0002\u0002KL\u0007E\u0002\u0002LM\u0007",
+    "V\u0002\u0002M\u0012\u0003\u0002\u0002\u0002NO\u0007Q\u0002\u0002OP",
+    "\u0007R\u0002\u0002PQ\u0007V\u0002\u0002QR\u0007K\u0002\u0002RS\u0007",
+    "Q\u0002\u0002ST\u0007P\u0002\u0002TU\u0007U\u0002\u0002U\u0014\u0003",
+    "\u0002\u0002\u0002VW\u0007V\u0002\u0002WX\u0007T\u0002\u0002XY\u0007",
+    "C\u0002\u0002YZ\u0007E\u0002\u0002Z[\u0007G\u0002\u0002[\u0016\u0003",
+    "\u0002\u0002\u0002\\]\t\u0002\u0002\u0002]\u0018\u0003\u0002\u0002\u0002",
+    "^`\u0005\u0017\f\u0002_^\u0003\u0002\u0002\u0002`a\u0003\u0002\u0002",
+    "\u0002a_\u0003\u0002\u0002\u0002ab\u0003\u0002\u0002\u0002b\u001a\u0003",
+    "\u0002\u0002\u0002cd\u0007J\u0002\u0002de\u0007V\u0002\u0002ef\u0007",
+    "V\u0002\u0002fg\u0007R\u0002\u0002gh\u00071\u0002\u0002hz\u00074\u0002",
+    "\u0002ij\u0007J\u0002\u0002jk\u0007V\u0002\u0002kl\u0007V\u0002\u0002",
+    "lm\u0007R\u0002\u0002mn\u00071\u0002\u0002no\u00073\u0002\u0002op\u0007",
+    "0\u0002\u0002pz\u00073\u0002\u0002qr\u0007J\u0002\u0002rs\u0007V\u0002",
+    "\u0002st\u0007V\u0002\u0002tu\u0007R\u0002\u0002uv\u00071\u0002\u0002",
+    "vw\u00073\u0002\u0002wx\u00070\u0002\u0002xz\u00072\u0002\u0002yc\u0003",
+    "\u0002\u0002\u0002yi\u0003\u0002\u0002\u0002yq\u0003\u0002\u0002\u0002",
+    "z\u001c\u0003\u0002\u0002\u0002{}\t\u0003\u0002\u0002|{\u0003\u0002",
+    "\u0002\u0002}~\u0003\u0002\u0002\u0002~|\u0003\u0002\u0002\u0002~\u007f",
+    "\u0003\u0002\u0002\u0002\u007f\u001e\u0003\u0002\u0002\u0002\u0080\u0082",
+    "\n\u0004\u0002\u0002\u0081\u0080\u0003\u0002\u0002\u0002\u0082\u0083",
+    "\u0003\u0002\u0002\u0002\u0083\u0081\u0003\u0002\u0002\u0002\u0083\u0084",
+    "\u0003\u0002\u0002\u0002\u0084 \u0003\u0002\u0002\u0002\u0085\u0086",
+    "\u0007\"\u0002\u0002\u0086\"\u0003\u0002\u0002\u0002\u0087\u0089\u0007",
+    "\u000f\u0002\u0002\u0088\u0087\u0003\u0002\u0002\u0002\u0088\u0089\u0003",
+    "\u0002\u0002\u0002\u0089\u008a\u0003\u0002\u0002\u0002\u008a\u008b\u0007",
+    "\f\u0002\u0002\u008b$\u0003\u0002\u0002\u0002\b\u0002ay~\u0083\u0088",
+    "\u0002"].join("");
+
+
+var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+
+var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new antlr4.dfa.DFA(ds, index); });
+
+function HttpLexer(input) {
+	antlr4.Lexer.call(this, input);
+    this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
+    return this;
+}
+
+HttpLexer.prototype = Object.create(antlr4.Lexer.prototype);
+HttpLexer.prototype.constructor = HttpLexer;
+
+Object.defineProperty(HttpLexer.prototype, "atn", {
+        get : function() {
+                return atn;
+        }
+});
+
+HttpLexer.EOF = antlr4.Token.EOF;
+HttpLexer.T__0 = 1;
+HttpLexer.T__1 = 2;
+HttpLexer.T__2 = 3;
+HttpLexer.T__3 = 4;
+HttpLexer.T__4 = 5;
+HttpLexer.T__5 = 6;
+HttpLexer.T__6 = 7;
+HttpLexer.T__7 = 8;
+HttpLexer.T__8 = 9;
+HttpLexer.T__9 = 10;
+HttpLexer.INT = 11;
+HttpLexer.HTTP_VERSION = 12;
+HttpLexer.TOKEN = 13;
+HttpLexer.TEXT = 14;
+HttpLexer.SP = 15;
+HttpLexer.CRLF = 16;
+
+HttpLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+
+HttpLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
+
+HttpLexer.prototype.literalNames = [ null, "':'", "'GET'", "'HEAD'", "'POST'", 
+                                     "'PUT'", "'PATCH'", "'DELETE'", "'CONNECT'", 
+                                     "'OPTIONS'", "'TRACE'", null, null, 
+                                     null, null, "' '" ];
+
+HttpLexer.prototype.symbolicNames = [ null, null, null, null, null, null, 
+                                      null, null, null, null, null, "INT", 
+                                      "HTTP_VERSION", "TOKEN", "TEXT", "SP", 
+                                      "CRLF" ];
+
+HttpLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", 
+                                  "T__5", "T__6", "T__7", "T__8", "T__9", 
+                                  "DIGIT", "INT", "HTTP_VERSION", "TOKEN", 
+                                  "TEXT", "SP", "CRLF" ];
+
+HttpLexer.prototype.grammarFileName = "Http.g4";
+
+
+
+exports.HttpLexer = HttpLexer;
+

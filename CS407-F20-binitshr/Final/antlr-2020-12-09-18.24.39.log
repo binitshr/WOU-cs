@@ -1,0 +1,62 @@
+2020-12-09 18:24:39:224 grammar LogManager.java:25 before: (COMBINED_GRAMMAR expeditions (RULES (RULE file (BLOCK (ALT hdr (+ (BLOCK (ALT row))) EOF))) (RULE hdr (BLOCK (ALT 'expedition_id' SEP 'peak_id' SEP 'peak_name' SEP 'year' SEP 'season' SEP 'basecamp_date' SEP 'highpoint_date' SEP 'termination_date' SEP 'termination_reason' SEP 'highpoint_meters' SEP 'members' SEP 'member_deaths' SEP 'hired_staff' SEP 'hired_staff_deaths' SEP 'oxygen_used' SEP 'trekking_agency' NEWLINE))) (RULE row (BLOCK (ALT expedition_id SEP peak_id SEP peak_name SEP year SEP season SEP basecamp_date SEP highpoint_date SEP termination_date SEP termination_reason SEP highpoint_meters SEP members SEP member_deaths SEP hired_staff SEP hired_staff_deaths SEP oxygen_used SEP trekking_agency NEWLINE))) (RULE expedition_id (BLOCK (ALT field))) (RULE peak_id (BLOCK (ALT field))) (RULE peak_name (BLOCK (ALT field))) (RULE year (BLOCK (ALT number) (ALT field))) (RULE season (BLOCK (ALT field))) (RULE basecamp_date (BLOCK (ALT field))) (RULE highpoint_date (BLOCK (ALT field))) (RULE termination_date (BLOCK (ALT field))) (RULE termination_reason (BLOCK (ALT field) (ALT info))) (RULE highpoint_meters (BLOCK (ALT number) (ALT field))) (RULE members (BLOCK (ALT number) (ALT field))) (RULE member_deaths (BLOCK (ALT number) (ALT field))) (RULE hired_staff (BLOCK (ALT number) (ALT field))) (RULE hired_staff_deaths (BLOCK (ALT number) (ALT field))) (RULE oxygen_used (BLOCK (ALT field))) (RULE trekking_agency (BLOCK (ALT field) (ALT info))) (RULE field (BLOCK (ALT TEXT) (ALT STRING) (ALT EPSILON))) (RULE field_list (BLOCK (ALT (? (BLOCK (ALT '|'))) TEXT (* (BLOCK (ALT '|' (? (BLOCK (ALT TEXT))))))) (ALT '|') (ALT EPSILON))) (RULE number (BLOCK (ALT NUMBER))) (RULE info (BLOCK (ALT INFO))) (RULE SEP (BLOCK (ALT ','))) (RULE NEWLINE (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n'))) (RULE NUMBER (BLOCK (ALT (? (BLOCK (ALT '-'))) (+ (BLOCK (ALT [0-9])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"])))))))) (RULE INFO (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"]))))) '(' ')'))) (RULE STRING (BLOCK (ALT '"' (* (BLOCK (ALT '""') (ALT (~ (SET '"'))))) '"')))))
+2020-12-09 18:24:39:235 grammar LogManager.java:25 after: (COMBINED_GRAMMAR expeditions (RULES (RULE file (BLOCK (ALT hdr (+ (BLOCK (ALT row))) EOF))) (RULE hdr (BLOCK (ALT 'expedition_id' SEP 'peak_id' SEP 'peak_name' SEP 'year' SEP 'season' SEP 'basecamp_date' SEP 'highpoint_date' SEP 'termination_date' SEP 'termination_reason' SEP 'highpoint_meters' SEP 'members' SEP 'member_deaths' SEP 'hired_staff' SEP 'hired_staff_deaths' SEP 'oxygen_used' SEP 'trekking_agency' NEWLINE))) (RULE row (BLOCK (ALT expedition_id SEP peak_id SEP peak_name SEP year SEP season SEP basecamp_date SEP highpoint_date SEP termination_date SEP termination_reason SEP highpoint_meters SEP members SEP member_deaths SEP hired_staff SEP hired_staff_deaths SEP oxygen_used SEP trekking_agency NEWLINE))) (RULE expedition_id (BLOCK (ALT field))) (RULE peak_id (BLOCK (ALT field))) (RULE peak_name (BLOCK (ALT field))) (RULE year (BLOCK (ALT number) (ALT field))) (RULE season (BLOCK (ALT field))) (RULE basecamp_date (BLOCK (ALT field))) (RULE highpoint_date (BLOCK (ALT field))) (RULE termination_date (BLOCK (ALT field))) (RULE termination_reason (BLOCK (ALT field) (ALT info))) (RULE highpoint_meters (BLOCK (ALT number) (ALT field))) (RULE members (BLOCK (ALT number) (ALT field))) (RULE member_deaths (BLOCK (ALT number) (ALT field))) (RULE hired_staff (BLOCK (ALT number) (ALT field))) (RULE hired_staff_deaths (BLOCK (ALT number) (ALT field))) (RULE oxygen_used (BLOCK (ALT field))) (RULE trekking_agency (BLOCK (ALT field) (ALT info))) (RULE field (BLOCK (ALT TEXT) (ALT STRING) (ALT EPSILON))) (RULE field_list (BLOCK (ALT (? (BLOCK (ALT '|'))) TEXT (* (BLOCK (ALT '|' (? (BLOCK (ALT TEXT))))))) (ALT '|') (ALT EPSILON))) (RULE number (BLOCK (ALT NUMBER))) (RULE info (BLOCK (ALT INFO))) (RULE SEP (BLOCK (ALT ','))) (RULE NEWLINE (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n'))) (RULE NUMBER (BLOCK (ALT (? (BLOCK (ALT '-'))) (+ (BLOCK (ALT [0-9])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"])))))))) (RULE INFO (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"]))))) '(' ')'))) (RULE STRING (BLOCK (ALT '"' (* (BLOCK (ALT '""') (ALT (~ (SET '"'))))) '"')))))
+2020-12-09 18:24:39:249 grammar LogManager.java:25 after extract implicit lexer =(COMBINED_GRAMMAR expeditions (RULES (RULE file (BLOCK (ALT hdr (+ (BLOCK (ALT row))) EOF))) (RULE hdr (BLOCK (ALT 'expedition_id' SEP 'peak_id' SEP 'peak_name' SEP 'year' SEP 'season' SEP 'basecamp_date' SEP 'highpoint_date' SEP 'termination_date' SEP 'termination_reason' SEP 'highpoint_meters' SEP 'members' SEP 'member_deaths' SEP 'hired_staff' SEP 'hired_staff_deaths' SEP 'oxygen_used' SEP 'trekking_agency' NEWLINE))) (RULE row (BLOCK (ALT expedition_id SEP peak_id SEP peak_name SEP year SEP season SEP basecamp_date SEP highpoint_date SEP termination_date SEP termination_reason SEP highpoint_meters SEP members SEP member_deaths SEP hired_staff SEP hired_staff_deaths SEP oxygen_used SEP trekking_agency NEWLINE))) (RULE expedition_id (BLOCK (ALT field))) (RULE peak_id (BLOCK (ALT field))) (RULE peak_name (BLOCK (ALT field))) (RULE year (BLOCK (ALT number) (ALT field))) (RULE season (BLOCK (ALT field))) (RULE basecamp_date (BLOCK (ALT field))) (RULE highpoint_date (BLOCK (ALT field))) (RULE termination_date (BLOCK (ALT field))) (RULE termination_reason (BLOCK (ALT field) (ALT info))) (RULE highpoint_meters (BLOCK (ALT number) (ALT field))) (RULE members (BLOCK (ALT number) (ALT field))) (RULE member_deaths (BLOCK (ALT number) (ALT field))) (RULE hired_staff (BLOCK (ALT number) (ALT field))) (RULE hired_staff_deaths (BLOCK (ALT number) (ALT field))) (RULE oxygen_used (BLOCK (ALT field))) (RULE trekking_agency (BLOCK (ALT field) (ALT info))) (RULE field (BLOCK (ALT TEXT) (ALT STRING) (ALT EPSILON))) (RULE field_list (BLOCK (ALT (? (BLOCK (ALT '|'))) TEXT (* (BLOCK (ALT '|' (? (BLOCK (ALT TEXT))))))) (ALT '|') (ALT EPSILON))) (RULE number (BLOCK (ALT NUMBER))) (RULE info (BLOCK (ALT INFO)))))
+2020-12-09 18:24:39:249 grammar LogManager.java:25 lexer =(LEXER_GRAMMAR expeditionsLexer (RULES (RULE T__0 (BLOCK (ALT 'expedition_id'))) (RULE T__1 (BLOCK (ALT 'peak_id'))) (RULE T__2 (BLOCK (ALT 'peak_name'))) (RULE T__3 (BLOCK (ALT 'year'))) (RULE T__4 (BLOCK (ALT 'season'))) (RULE T__5 (BLOCK (ALT 'basecamp_date'))) (RULE T__6 (BLOCK (ALT 'highpoint_date'))) (RULE T__7 (BLOCK (ALT 'termination_date'))) (RULE T__8 (BLOCK (ALT 'termination_reason'))) (RULE T__9 (BLOCK (ALT 'highpoint_meters'))) (RULE T__10 (BLOCK (ALT 'members'))) (RULE T__11 (BLOCK (ALT 'member_deaths'))) (RULE T__12 (BLOCK (ALT 'hired_staff'))) (RULE T__13 (BLOCK (ALT 'hired_staff_deaths'))) (RULE T__14 (BLOCK (ALT 'oxygen_used'))) (RULE T__15 (BLOCK (ALT 'trekking_agency'))) (RULE T__16 (BLOCK (ALT '|'))) (RULE SEP (BLOCK (ALT ','))) (RULE NEWLINE (BLOCK (ALT (? (BLOCK (ALT '\r'))) '\n'))) (RULE NUMBER (BLOCK (ALT (? (BLOCK (ALT '-'))) (+ (BLOCK (ALT [0-9])))))) (RULE TEXT (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"])))))))) (RULE INFO (BLOCK (ALT (+ (BLOCK (ALT (~ (SET [,\n\r"]))))) '(' ')'))) (RULE STRING (BLOCK (ALT '"' (* (BLOCK (ALT '""') (ALT (~ (SET '"'))))) '"')))))
+2020-12-09 18:24:39:421 semantics LogManager.java:25 tokens={EOF=-1, T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, T__14=15, T__15=16, T__16=17, SEP=18, NEWLINE=19, NUMBER=20, TEXT=21, INFO=22, STRING=23}
+2020-12-09 18:24:39:421 semantics LogManager.java:25 strings={'expedition_id'=1, 'peak_id'=2, 'peak_name'=3, 'year'=4, 'season'=5, 'basecamp_date'=6, 'highpoint_date'=7, 'termination_date'=8, 'termination_reason'=9, 'highpoint_meters'=10, 'members'=11, 'member_deaths'=12, 'hired_staff'=13, 'hired_staff_deaths'=14, 'oxygen_used'=15, 'trekking_agency'=16, '|'=17, ','=18}
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 0 in rule file
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[{18, 21, 23}, <EOF>]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 1 in rule year
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 2 in rule termination_reason
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[{18, 21, 23}, 22]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 3 in rule highpoint_meters
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 4 in rule members
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 5 in rule member_deaths
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 6 in rule hired_staff
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 7 in rule hired_staff_deaths
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[20, {18, 21, 23}]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 8 in rule trekking_agency
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 look=[{19, 21, 23}, 22]
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:426 LL1 LogManager.java:25 
+DECISION 9 in rule field
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 look=[21, 23, {18..19}]
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 
+DECISION 10 in rule field_list
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 look=[17, 21]
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 
+DECISION 11 in rule field_list
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 look=[21, {<EOF>, 17}]
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 
+DECISION 12 in rule field_list
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 look=[17, <EOF>]
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 LL(1)? true
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 
+DECISION 13 in rule field_list
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 look=[{17, 21}, 17, <EOF>]
+2020-12-09 18:24:39:427 LL1 LogManager.java:25 LL(1)? false
