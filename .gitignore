@@ -1,0 +1,13 @@
+.DS_Store
+*.interp
+*.class
+*.java
+*.tokens
+*.yml
+*.npmignore
+*.jshintrc
+*.jscsrc
+*.ts
+*.d.ts
+*.bnf
+node_modules/
