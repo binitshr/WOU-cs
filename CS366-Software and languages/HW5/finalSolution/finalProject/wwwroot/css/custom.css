@@ -1,0 +1,41 @@
+
+
+.links a {
+	background: #666;
+	padding: 10px;
+
+}
+
+.links li {
+	border-bottom: #666 dashed;
+	padding: 10px;
+
+} 
+
+.links a{
+	background: #666;
+	padding: 10px;
+} 
+
+#nav ul{
+	padding-top: 13px;
+	padding-left: 10px;
+
+}
+
+#nav li{
+list-style: none;
+float: left;
+padding-right: 20px;
+
+} 
+
+#nav .active{
+	font-weight: bold;
+	color: black;
+}
+
+#sidebar {
+float: right;
+width: 50%;
+}

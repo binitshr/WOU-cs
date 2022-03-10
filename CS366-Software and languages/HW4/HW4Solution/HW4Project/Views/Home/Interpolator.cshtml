@@ -1,0 +1,44 @@
+@model HW4Project.Models.InterpolatorModel
+
+@{
+	ViewData["Title"] = "Color Interpolator";
+
+}
+
+<h2>@ViewData["Title"]</h2>
+<form asp-controller="Home" asp-action="interpolator" method="post">
+    <div class="form-group">
+        <div class="row">
+
+                    <label for="color"> <strong>First Color</strong>
+                        <input type="text" asp-for="@Model.first"  class="form-control">
+                        <span asp-validation-for = "@Model.first"></span>
+                    </label>
+                    
+                    <label for="color"> <strong>Second Color</strong>
+                        <input type="text"  asp-for="@Model.second" class="form-control">
+                    </label>
+                    
+                    <label for="color"> <strong>Number of Colors</strong>
+                        <input type="number"  asp-for="@Model.num" class="form-control">
+                    </label>
+                    
+                
+                <button type="submit" class="btn btn-primary">Interpolate</button>
+            
+            </div>
+            
+			<div class="displayColor">
+
+            <div>
+        
+                
+            }
+        </div>
+
+			</div>
+
+        
+        </div>
+    </div>
+</form>

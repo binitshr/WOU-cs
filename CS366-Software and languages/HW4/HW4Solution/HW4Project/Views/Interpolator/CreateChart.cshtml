@@ -1,0 +1,54 @@
+
+@{
+    ViewBag.Title = "CreateChart";
+}
+
+<h2>Interpolator</h2>
+<div class="row">
+    <div class="col-md-6">
+        @using (Html.BeginForm("CreateChart", "Interpolator", FormMethod.Post))
+        {
+
+            <div class=" form-group">
+                @Html.Label("C1", "Color 1:")
+                @Html.TextBox("C1", null, new { @class = "form-control", type = "text"})
+                @Html.Label("C2", "Color 2:")
+                @Html.TextBox("C2", null, new { @class = "form-control", type = "text"})
+                @Html.Label("Num", "No of Colors:")
+                @Html.TextBox("Num", null, new { @class = "form-control", type = "number" })
+                <br />
+                <button type="submit" class="btn btn-primary"> Create Color Table</button>
+            </div>
+
+
+        }
+
+    </div>
+
+    <div class="col-md-6">
+        <div>
+            @if (ViewBag.Success == true)
+            {
+                     <table>
+                        @foreach (var color in ViewBag.List)
+                        {
+                         <tr>
+                             <td height="10px">@color</td>
+                             <td style=" width:300px; height:30px; background:@color"></td>
+                         </tr>
+                        
+                        
+
+                        }
+                    </table>
+                
+            }
+        </div>
+
+
+    </div>
+
+</div>
+
+
+

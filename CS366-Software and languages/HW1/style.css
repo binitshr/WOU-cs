@@ -1,0 +1,113 @@
+body{
+	background: rgb(102, 102, 102);
+	color: #fff;
+	line-height: 1.5em;
+
+}
+a{
+	color:#fff;
+	text-decoration: none;
+
+}
+ul{
+	padding: 0;
+
+}
+.clr{
+	clear: both;
+	padding:5px ;
+}
+
+.container-fluid{
+	background:#333;
+	width:auto;
+	margin: 10px;
+	overflow: hidden;
+	padding: 20px;
+
+} 
+.row{
+	background:#333;
+	width:auto;
+	margin: 10px;
+	overflow: hidden;
+	padding: 20px;
+
+}
+
+.links a {
+	background: #666;
+	padding: 10px;
+
+}
+
+.links li {
+	border-bottom: #666 dashed;
+	padding: 10px;
+
+} 
+
+.links a{
+	background: #666;
+	padding: 10px;
+} 
+
+.img-fluid{
+    width: 75%;
+  height: auto;
+	
+}
+
+.headings{
+	font: size 1;
+}
+
+#nav ul{
+	padding-top: 13px;
+	padding-left: 10px;
+
+}
+
+#nav li{
+list-style: none;
+float: left;
+padding-right: 20px;
+
+} 
+
+#nav .active{
+	font-weight: bold;
+	color: black;
+}
+
+#main{
+	float: left ;
+	width:50%;
+
+}
+
+#sidebar {
+float: right;
+width: 50%;
+}
+
+#footer {
+	text-align: center;
+	padding: 10px;
+	background: #666;
+	margin-top: 20px;
+	width: auto;
+}
+
+input , textarea {
+	width: 30%;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+#resume {
+    
+	width:auto;
+
+}

@@ -1,0 +1,27 @@
+@{
+    ViewData["Title"] = "Notification";
+}
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thankyou for your response!</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+  </head>
+   <body class="text-center">
+    <p>
+      <h1>Thank you, @Model.Name! your response has been recieved</h1>
+      @if (Model.Attendance == true)
+      {
+        @:Glad that youre in on the fun!
+        <p>
+      Checkout the guestlist<a class="nav-link" asp-action="ListResponses">here</a>
+      to see who will be joining you!
+       </p>
+      } else {
+        @:There is always a next time! or Follow this link to RSVP again!
+        <a class="btn btn-primary" asp-controller="Rsvp" asp-action="RsvpForm">RSVP</a>
+      }
+    </p>
+    
+  </body>
+</html>

@@ -1,0 +1,36 @@
+@{
+    ViewData["Title"] = "Potlock menu";
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>This is the Potlock Menu</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="panel-body">
+      <h2>Following are the food items confirmed</h2>
+      <table class="table table-sm table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Item</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach (Potlock r in Model)
+          {
+            <tr>
+              <td>@r.Name</td>
+              <td>@r.Category</td>
+              <td>@r.Item</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+     </div>
+  </body>
+</html>

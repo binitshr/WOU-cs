@@ -1,0 +1,57 @@
+
+@model string
+@{
+    ViewData["Title"] = "Color Picker";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-controller="Home" asp-action="RGB" method="get">
+    <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <h4>Enter your Reds Greens and Blues here</h4>
+               
+                <div class="red">
+                    <label for="color">
+                        <strong>Red</strong>
+                        <input type="number" name="red" min="0" max="255" class="form-control">
+                    </label>
+
+                </div>
+               
+                <div class="green" >
+                    <label for="color">
+                        <strong>Green</strong>
+                        <input type="number" name="green" min="0" max="255" class="form-control" >
+                    </label>
+
+                </div>
+               
+                <div class="green">
+                    <label for="color">
+                        <strong>Blue</strong>
+                        <input type="number" name="blue" min="0" max="255" class="form-control" >
+                    </label>
+
+                </div>
+                <button type="submit" class="btn btn-primary">Subit Colors</button>
+
+            </div>
+
+             <div class="col">
+
+                <div class="display-4" style="border: 5px solid black; width:7.5em; height:7.5em; background-color: @Model">
+
+                </div>
+
+                
+                    <h5> @Model is the color produced </h5>
+
+            </div>
+
+
+        </div>
+    </div>
+</form>
+

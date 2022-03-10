@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">    
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="calculation.js"></script>
+       
+        
+    </head>
+  <body> 
+    
+
+    <div class="jumbotron">
+        <h1 class="display-4">Greetings!</h1>
+        <p class="lead" >Investing the right amount in right time can make you rich. or atleast help you retire early being well off!</p>
+        <hr class="my-4">
+        <h5>Lets calculate how much you can make from long term investing.</h5>
+        <span>&#9888;</span><p>This is only for fun. Do not make real life Investment just based on this !</p>
+    </br>
+    <button id="try"class="btn btn-primary">Try the calculator</button>
+    </div>
+
+    <div class="form">
+      <div class="col-md-6">
+        <div id="input" style="display: none;">
+                  <form method="POST">
+                      <div class="form-group">
+                        <label for="principal">Princial amount: </label>
+                        $<input type="number" class="form-control" id="principal" placeholder=" Enter your Principal amount" required>
+                      </div>
+                      <div class="form-group">
+                        <label for="interest">Rate of interest:</label>
+                        <input type="number" class="form-control" id="interest" placeholder="Enter the Interest rate your investments might yeild. average is around 12- 30 % in long term investment" required>% APR
+                      </div>
+                      <div class="form-group">
+                          <label for="monthly">Montly Investment:</label>
+                          $<input type="number" class="form-control" id="monthly" placeholder="Enter your monthly investment contributions" required>
+                        </div>
+                        <div class="slidecontainer">
+                          <input type="range" min="1" max="100" value="50" class="slider" id="myRange" required>
+                          <p>years of investment: <span id="demo"></span></p>
+                        </div>
+                      
+                  </form>
+          </div>
+      </div> 
+     
+
+      <button id="button" class="btn btn-primary" style="display: none;" onclick="calculate()">calculate your investment</button>
+      
+    </div>
+
+
+</div>
+<div id="table">
+</div>
+
+</html>
+</script>
+
+<script src="main.js">
+</script>
+
+
